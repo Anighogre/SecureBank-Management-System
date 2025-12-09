@@ -49,19 +49,19 @@ SecureBank is built following the **MVC Architecture**:
 
 ## 📁 Folder Structure
 
-SecureBank/
-├── src/
-│ ├── controller/ # Servlets
-│ ├── dao/ # Database logic
-│ ├── model/ # Beans
-│ └── service/ # Business logic
-├── WebContent/
-│ ├── pages/ # JSP pages
-│ ├── css/ # Styles
-│ └── js/ # Scripts
-├── database/ # SQL tables
-├── README.md
-└── pom.xml or .project
+SecureBank/<br>
+├── src/<br>
+│ ├── controller/ # Servlets<br>
+│ ├── dao/ # Database logic<br>
+│ ├── model/ # Beans<br>
+│ └── service/ # Business logic<br>
+├── WebContent/<br>
+│ ├── pages/ # JSP pages<br>
+│ ├── css/ # Styles<br>
+│ └── js/ # Scripts<br>
+├── database/ # SQL tables<br>
+├── README.md<br>
+└── pom.xml or .project<br>
 
 
 ---
