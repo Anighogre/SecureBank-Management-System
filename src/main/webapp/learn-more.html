@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More – SecureBank</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .hero-learn {
+            background: linear-gradient(to right, #112d60, #0d6efd);
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+        .hero-learn h1 {
+            font-weight: 700;
+        }
+        .feature-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            transition: .3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .feature-box:hover {
+            transform: translateY(-6px);
+        }
+        .arch-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .tech-card {
+            border-radius: 10px;
+            padding: 20px;
+            transition: .3s ease;
+        }
+        .tech-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .cta-section {
+            background: #0d6efd;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero-learn">
+    <div class="container">
+        <h1>Learn More About SecureBank</h1>
+        <p class="lead mt-3">Explore how SecureBank is built, how it works, and why it ensures safe online banking.</p>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">How SecureBank Works</h2>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <i class="bi bi-person-lock fs-1 text-primary"></i>
+                    <h5 class="fw-bold mt-3">User Authentication</h5>
+                    <p>Secure login using servlet-based authentication and encrypted session management.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <i class="bi bi-cash-coin fs-1 text-primary"></i>
+                    <h5 class="fw-bold mt-3">Account Management</h5>
+                    <p>View balance, monitor account details, and track transactions in real time.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="feature-box text-center">
+                    <i class="bi bi-arrow-left-right fs-1 text-primary"></i>
+                    <h5 class="fw-bold mt-3">Fund Transfers</h5>
+                    <p>Transfer funds securely with backend validations and controlled workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ARCHITECTURE SECTION -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">System Architecture</h2>
+
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <img src="https://www.thecrazyprogrammer.com/wp-content/uploads/2021/03/client-server-architecture-diagram.png" class="arch-img" alt="Architecture Diagram">
+            </div>
+
+            <div class="col-lg-6">
+                <p>
+                    SecureBank follows a **Java MVC architecture** using Servlets, JSP, and JDBC for backend workflow.  
+                    The system interacts with an **Oracle Database** for persistent storage of customers, accounts, 
+                    and transaction records.
+                </p>
+                <ul>
+                    <li>Client requests handled by Servlet controllers</li>
+                    <li>Business logic processed in the Java service layer</li>
+                    <li>JDBC interacts with Oracle DB for queries</li>
+                    <li>JSP handles the view rendering</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECURITY SECTION -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Security Highlights</h2>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="feature-box">
+                    <h5 class="fw-bold"><i class="bi bi-shield-check text-primary"></i> Session Security</h5>
+                    <p>Session tokens ensure that only authenticated users access sensitive banking functions.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="feature-box">
+                    <h5 class="fw-bold"><i class="bi bi-key text-primary"></i> Data Validation</h5>
+                    <p>Every action inside SecureBank is validated to protect user data and prevent manipulation.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="feature-box">
+                    <h5 class="fw-bold"><i class="bi bi-database-lock text-primary"></i> Safe Transactions</h5>
+                    <p>Funds are transferred only after passing strict backend compliance and security checks.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TECHNOLOGY STACK -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Technology Stack</h2>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="tech-card text-center shadow-sm">
+                    <i class="bi bi-cup-hot fs-1 text-primary"></i>
+                    <h6 class="fw-bold mt-2">Java</h6>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="tech-card text-center shadow-sm">
+                    <i class="bi bi-window-sidebar fs-1 text-primary"></i>
+                    <h6 class="fw-bold mt-2">Servlets / JSP</h6>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="tech-card text-center shadow-sm">
+                    <i class="bi bi-database fs-1 text-primary"></i>
+                    <h6 class="fw-bold mt-2">Oracle DB</h6>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="tech-card text-center shadow-sm">
+                    <i class="bi bi-bootstrap fs-1 text-primary"></i>
+                    <h6 class="fw-bold mt-2">Bootstrap / CSS</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="container my-5">
+    <div class="cta-section">
+        <h3 class="fw-bold">Ready to Explore SecureBank?</h3>
+        <p>Learn how each module works and experience the system in action.</p>
+        <a href="CustomerLogin.html" class="btn btn-light px-4 py-2">Back to Home</a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

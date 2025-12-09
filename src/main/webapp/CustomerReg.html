@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank - Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a73e8 0%, #6c8ef5 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .register-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+        
+        .bank-header {
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .bank-header h3 {
+            color: #1a73e8;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        
+        .bank-header p {
+            color: #5f6368;
+            font-size: 14px;
+        }
+        
+        
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #3c4043;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 8px 16px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus {
+            border-color: #1a73e8;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .checkbox-group label {
+            font-size: 14px;
+            color: #5f6368;
+        }
+        
+        .register-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        
+        .register-btn:hover {
+            background-color: #1669d6;
+        }
+        
+        .login-link {
+            padding-top: 20px;
+            border-top: 1px solid #e8eaed;
+            text-align: center;
+        }
+        
+        .login-link a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .login-link a:hover {
+            color: #1669d6;
+            text-decoration: underline;
+        }
+
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #9aa0a6;
+            text-align: center;
+        }
+        
+        @media (max-width: 480px) {
+            .register-container {
+                padding: 30px 20px;
+            }
+            
+            .bank-header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="bank-header">
+            <h3>SecureBank</h3>
+            <p>Create your SecureBank Account</p>
+        </div>
+        
+        <form class="register-form" action="creg" method="post">
+            <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your full name" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" placeholder="Enter your email address" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="uname" placeholder="Choose a username" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" placeholder="Create a password" required="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="cpwd">Confirm Password</label>
+                <input type="password" id="cpwd" name="cpwd" placeholder="Confirm your password" required="required">
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="check" name="check" value="yes" required="required">
+                <label for="check">I agree with terms and conditions</label>
+            </div>
+            
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+        
+        <div class="login-link">
+            <p>Already have an account? <a href="CustomerLogin.html">Login here</a></p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2023 SecureBank. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
